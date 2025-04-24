@@ -1,7 +1,7 @@
 <!-- Gabriel Fernandes Pitta 62-1 -->
 <!-- Trabalho Blog de Viagens  -->
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8"/>
@@ -10,6 +10,24 @@
     <title>Pitta Viagens - Explorando o Mundo</title>
     <link rel="icon" href="img/LogoPittaViagens.png" type="image/png" />
     <link href="style.css" rel="stylesheet" />
+    <script>
+        // Função para redirecionar para um link aleatório
+        function redirectRandom() {
+            // Lista de links
+            const links = [
+                "galeria1.html",
+                "galeria2.html",
+                "galeria3.html",
+                "galeria4.html"
+            ];
+    
+            // Selecionar um link aleatório
+            const randomLink = links[Math.floor(Math.random() * links.length)];
+    
+            // Redirecionar o usuário para o link aleatório
+            window.location.href = randomLink;
+        }
+    </script>
 </head>
 
 <body>
@@ -17,14 +35,17 @@
 
         <a href="index.html"><img src="img/BannerPittaViagens.png" alt="Logo Pitta Viagens" width="" height="100"/></a>
 
+        <h1><strong>Explorando o Mundo</strong></h1>
+
         <div class="navbar">
 
             <nav>
                 <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="destinos.html">Destinos</a></li>
+                    <li><a href="index.html">Melhores Destinos</a></li>
+                    <li><a href="sobre.html">Dicas de Viagem</a></li>
+                    <li><a href="destinos.html">Relatos</a></li>
                     <li><a href="contato.html">Contato</a></li>
+                    <li><a href="#" onclick="redirectRandom()">Galeria</a></li>
                 </ul>
             </nav>
 
@@ -40,11 +61,23 @@
             <img src="img/Viagem.jpg" alt="Imagem de Viagem" title="Imagem de Viagem" width="fill" height="" />
         </div>
 
+        <div class="container">
+            <h2>Últimos Posts</h2>
+            <div class="post">
+                <h3>Explorando as Montanhas Rochosas</h3>
+                <p>Uma jornada pelas deslumbrantes Montanhas Rochosas do Canadá.</p>
+                <img src="img/MontanhasRochosas.jpg" alt="Montanhas Rochosas" title="Montanhas Rochosas" width="fill" height="" />
+            </div>
+            <div class="post">
+                <h3>Aventuras na Floresta Amazônica</h3>
+                <p>Descubra a biodiversidade incrível da Floresta Amazônica.</p>
+                <img src="img/FlorestaAmazonica.jpg" alt="Floresta Amazônica" title="Floresta Amazônica" width="fill" height="" />
+            </div>
+
     </main>
     <footer>
         
             <p>&copy; 2025 PittaViagens. Todos os direitos reservados.</p>
-            <p>Desenvolvido por Gabriel Fernandes Pitta</p>
         
     </footer>
 </body>
