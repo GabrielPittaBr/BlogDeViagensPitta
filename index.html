@@ -4,7 +4,7 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Blog de Viagens do Pitta - Explorando o Mundo." />
     <title>Pitta Viagens - Explorando o Mundo</title>
@@ -20,10 +20,10 @@
                 "galeria3.html",
                 "galeria4.html"
             ];
-    
+
             // Selecionar um link aleatório
             const randomLink = links[Math.floor(Math.random() * links.length)];
-    
+
             // Redirecionar o usuário para o link aleatório
             window.location.href = randomLink;
         }
@@ -33,7 +33,7 @@
 <body>
     <header>
 
-        <a href="index.html"><img src="img/BannerPittaViagens.png" alt="Logo Pitta Viagens" width="" height="100"/></a>
+        <a href="index.html"><img src="img/BannerPittaViagens.png" alt="Logo Pitta Viagens" width="" height="100" /></a>
 
         <h1><strong>Explorando o Mundo</strong></h1>
 
@@ -44,8 +44,8 @@
                     <li><a href="index.html">Melhores Destinos</a></li>
                     <li><a href="sobre.html">Dicas de Viagem</a></li>
                     <li><a href="destinos.html">Relatos</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li><a href="#" onclick="redirectRandom()">Galeria</a></li>
+                    <li><a href="contato.html">Envie seu comentário</a></li>
+                    <li><a href="#" onclick="redirectRandom()">Destino Aleatório</a></li>
                 </ul>
             </nav>
 
@@ -53,32 +53,94 @@
 
     </header>
     <main>
-        <br>
-        <div class="container">
-            <h1>Blog de Viagens do Pitta</h1>
-            <p>Bem-vindo ao meu blog de viagens! Aqui você encontrará dicas, relatos e fotos das minhas aventuras pelo
-                mundo.</p>
-            <img src="img/Viagem.jpg" alt="Imagem de Viagem" title="Imagem de Viagem" width="fill" height="" />
+        <div id="container-geral">
+
+            <!-- Seção de Boas-Vindas -->
+            <div class="container">
+                <section id="boas-vindas">
+                    <h3>Bem-vindo ao PittaViagens, o melhor blog de viagens do Mundo!</h3><br>
+                    <p>Aqui você verá que viajar é mais do que conhecer lugares: é mergulhar em culturas, sabores e
+                        paisagens
+                        inesquecíveis.
+                        Aqui você encontra <strong>dicas de viagem</strong>, <em>relatos de experiências</em> e tudo
+                        para
+                        inspirar seu próximo destino.</p><br>
+                    <p>
+                        Viajar é uma das experiências mais <strong>enriquecedoras</strong> que alguém pode viver, pois
+                        nos permite <em>conhecer novas culturas</em>, experimentar sabores diferentes, ouvir idiomas
+                        variados e mergulhar em realidades completamente distintas da nossa. Além de proporcionar
+                        <strong>descanso e lazer</strong>, viajar <em>amplia nossos horizontes</em>, nos ajuda a sair da
+                        zona de conforto e a desenvolver <strong>empatia</strong> ao entender outras formas de viver.
+                        Cada destino traz <em>aprendizados únicos</em>, memórias inesquecíveis e histórias que nos
+                        transformam por dentro. Seja para <strong>relaxar</strong> em uma praia paradisíaca, <em>se
+                            aventurar</em> em trilhas nas montanhas, explorar centros históricos ou apenas se
+                        desconectar da rotina, viajar é uma forma poderosa de <strong>crescer como pessoa</strong> e de
+                        enxergar o mundo com <em>novos olhos</em>.
+                    </p><br>
+
+                </section>
+
+                <!-- Seção com Artigos -->
+                <section id="artigos-recentes">
+                    <h3>Lugares incríveis para Visitar</h3><br>
+
+                    <article>
+                        <h4>Explorando as ruas coloridas de Valparaíso</h4>
+                        <p>Valparaíso, no Chile, é um verdadeiro paraíso para quem ama arte urbana. <em>Conheça os
+                                murais mais icônicos</em> e descubra como se locomover pela cidade com nosso roteiro
+                            completo.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h4>Dicas para economizar em uma viagem à Europa</h4>
+                        <p>Viajar bem não significa gastar muito. Neste artigo, trazemos uma <strong>lista com dicas
+                                práticas</strong> para planejar seu roteiro europeu sem estourar o orçamento.</p>
+                    </article>
+
+                </section>
+
+            </div>
+
+            <aside id="relatos-pessoais">
+                <div class="comentario">
+                    <img src="https://i.pravatar.cc/150?img=65" alt="ProfilePictureDeide" class="foto-perfil">
+                    <div class="texto-comentario">
+                        <p class="nome">Deide Azul <span class="data">• 10 de abril de 2025</span></p>
+                        <p class="mensagem">Amo todos os Felipes Roleskes mencionados na pagina, simplesmente incriveis!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="comentario">
+                    <img src="https://i.pravatar.cc/400?img=64" alt="ProfilePictureLucas" class="foto-perfil">
+                    <div class="texto-comentario">
+                        <p class="nome">Jorge <span class="data">• 2 de abril de 2025</span></p>
+                        <p class="mensagem">Viajar mudou minha vida. Quero todos os Felipes Roleskos! Esse blog me
+                            ajudou a montar meu primeiro roteiro
+                            sozinho. Obrigado!</p>
+                    </div>
+                </div>
+
+                <div class="comentario">
+                    <img src="https://i.pravatar.cc/150?img=56" alt="ProfilePictureLucas" class="foto-perfil">
+                    <div class="texto-comentario">
+                        <p class="nome">Lucas Andrade <span class="data">• 2 de abril de 2025</span></p>
+                        <p class="mensagem">Viajar mudou minha vida. Esse blog me ajudou a montar meu primeiro roteiro
+                            sozinho. Obrigado!</p>
+                    </div>
+                </div>
+            </aside>
+
         </div>
-
-        <div class="container">
-            <h2>Últimos Posts</h2>
-            <div class="post">
-                <h3>Explorando as Montanhas Rochosas</h3>
-                <p>Uma jornada pelas deslumbrantes Montanhas Rochosas do Canadá.</p>
-                <img src="img/MontanhasRochosas.jpg" alt="Montanhas Rochosas" title="Montanhas Rochosas" width="fill" height="" />
-            </div>
-            <div class="post">
-                <h3>Aventuras na Floresta Amazônica</h3>
-                <p>Descubra a biodiversidade incrível da Floresta Amazônica.</p>
-                <img src="img/FlorestaAmazonica.jpg" alt="Floresta Amazônica" title="Floresta Amazônica" width="fill" height="" />
-            </div>
-
     </main>
     <footer>
-        
-            <p>&copy; 2025 PittaViagens. Todos os direitos reservados.</p>
-        
+
+        <p>&copy; 2025 PittaViagens. Todos os direitos reservados.</p>
+        <a href="#" class="contato-footer">
+            <p>Clique aqui para entrar em contato.</p>
+        </a>
+
     </footer>
 </body>
 
