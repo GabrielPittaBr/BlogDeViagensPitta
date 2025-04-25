@@ -21,7 +21,18 @@ body {
     position: relative;
 }
 
-header {;
+#container-geral-centro {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1500px;
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    position: relative;
+}
+
+header {
     background-color: #37E670;
     color: #107755;
     padding-top: 20px;
@@ -68,13 +79,13 @@ nav a:hover {
     background-color: #ffffff;
 }
 
-.container{
+.container {
     flex: 3;
     padding: 40px;
     text-align: justify;
     max-width: 70%;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 12px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 0, auto;
 }
@@ -136,7 +147,7 @@ nav a:hover {
     max-width: 30%;
     background-color: #ffffff;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 12px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-top: 0;
 }
@@ -207,4 +218,132 @@ footer {
     color: #0000FF;
     background-color: #ffffff;
     transition: color 0.3s ease, background-color 0.3s ease;   
+}
+
+/* CSS da pagina Melhores Destinos */
+
+.destinos {
+    display: grid;
+    gap: 50px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.destinos a {
+    text-decoration: none;
+}
+
+.destino {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.destino:hover {
+    transform: scale(1.03);
+}
+
+.destino img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.destino .info {
+    padding: 16px;
+}
+
+.destino h3 {
+    margin: 0;
+    color: #2c3e50;
+}
+
+.destino p {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 0.95em;
+    color: #555;
+}
+
+/* CSS da pagina Dicas de Viagem */
+
+.container h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+.dica {
+    background-color: #fdfdfd;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.dica:hover {
+    transform: scale(1.03);
+}
+
+.dica h3 {
+    color: #2c3e50;
+}
+
+ol, ul {
+    margin-left: 20px;
+}
+
+.destacado {
+    background-color: #e8f8f5;
+    padding: 10px;
+    border-left: 5px solid #1abc9c;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+/* CSS da pagina Enviar Comentarios */
+
+/* Formulário de Comentário */
+
+.form-comentario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.input-campo {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.textarea-comentario {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    resize: vertical;
+}
+
+.botao-enviar {
+    padding: 12px;
+    background-color: #107755;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.botao-enviar:hover {
+    background-color: #0d5f46;
 }

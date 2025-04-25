@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PittaViagens - Comentário</title>
+    <link rel="icon" href="img/LogoPittaViagens.png" type="image/png" />
+    <link href="style.css" rel="stylesheet" />
+    <style>
+        .navbar nav ul li:nth-child(3) a {
+            border-bottom: 2px solid #ffffff;
+            padding-bottom: 8px;
+        }
+    </style>
+    <script>
+        // Função para redirecionar para um link aleatório
+        function redirectRandom() {
+            // Lista de links
+            const links = [
+                "Countries/alemanha.html",
+                "Countries/italia.html",
+                "Countries/japao.html",
+                "Countries/brasil.html",
+                "Countries/angola.html",
+                "Countries/canada.html"
+            ];
+
+            // Selecionar um link aleatório
+            const randomLink = links[Math.floor(Math.random() * links.length)];
+
+            // Redirecionar o usuário para o link aleatório
+            window.location.href = randomLink;
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+
+        <a href="index.html"><img src="img/BannerPittaViagens.png" alt="Logo Pitta Viagens" width="" height="100" /></a>
+
+        <h1><strong>Explorando o Mundo</strong></h1>
+
+        <div class="navbar">
+
+            <nav>
+                <ul>
+                    <li><a href="melhoresdestinos.html">Melhores Destinos</a></li>
+                    <li><a href="dicasdeviagem.html">Dicas de Viagem</a></li>
+                    <li><a href="enviarcomentario.html">Envie seu comentário</a></li>
+                    <li><a href="#" onclick="redirectRandom()">Destino Aleatório</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+    <main>
+        <div id="container-geral-centro">
+            <section class="container">
+                <h3>Deixe seu comentário ou um Feedback!</h3>
+                <form action="#" method="post" class="form-comentario">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome..." class="input-campo" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email..." class="input-campo" required>
+
+                    <label for="comentario">Comentário:</label>
+                    <textarea id="comentario" name="comentario" rows="5" placeholder="Escreva seu comentário..." class="textarea-comentario" required></textarea>
+
+                    <button type="submit" class="botao-enviar">Enviar</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+
+        <p>&copy; 2025 PittaViagens. Todos os direitos reservados.</p>
+        <a href="#" class="contato-footer">
+            <p>Clique aqui para entrar em contato.</p>
+        </a>
+
+    </footer>
+</body>
+
+</html>

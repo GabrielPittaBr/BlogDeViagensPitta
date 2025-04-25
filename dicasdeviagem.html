@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PittaViagens - Dicas de Viagem</title>
+    <link rel="icon" href="img/LogoPittaViagens.png" type="image/png" />
+    <link href="style.css" rel="stylesheet" />
+    <style>
+        .navbar nav ul li:nth-child(2) a {
+            border-bottom: 2px solid #ffffff;
+            padding-bottom: 8px;
+        }
+    </style>
+    <script>
+        // Função para redirecionar para um link aleatório
+        function redirectRandom() {
+            // Lista de links
+            const links = [
+                "Countries/alemanha.html",
+                "Countries/italia.html",
+                "Countries/japao.html",
+                "Countries/brasil.html",
+                "Countries/angola.html",
+                "Countries/canada.html"
+            ];
+
+            // Selecionar um link aleatório
+            const randomLink = links[Math.floor(Math.random() * links.length)];
+
+            // Redirecionar o usuário para o link aleatório
+            window.location.href = randomLink;
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+
+        <a href="index.html"><img src="img/BannerPittaViagens.png" alt="Logo Pitta Viagens" width="" height="100" /></a>
+
+        <h1><strong>Explorando o Mundo</strong></h1>
+
+        <div class="navbar">
+
+            <nav>
+                <ul>
+                    <li><a href="melhoresdestinos.html">Melhores Destinos</a></li>
+                    <li><a href="dicasdeviagem.html">Dicas de Viagem</a></li>
+                    <li><a href="enviarcomentario.html">Envie seu comentário</a></li>
+                    <li><a href="#" onclick="redirectRandom()">Destino Aleatório</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+    <main>
+        <div id="container-geral-centro">
+
+            <div class="container">
+                <h2><strong>Dicas de Viagem Essenciais</strong></h2>
+
+                <div class="dica">
+                    <h3>Antes de viajar: o checklist obrigatório</h3><br>
+                    <ol>
+                        <li>Verifique a validade do seu passaporte ou documento de identidade.</li>
+                        <li>Compre as passagens com antecedência e confirme os horários.</li>
+                        <li>Pesquise sobre o clima e a cultura do destino.</li>
+                        <li>Reserve hospedagens seguras e bem localizadas.</li>
+                        <li>Monte um kit de primeiros socorros com itens básicos.</li>
+                    </ol>
+                </div>
+
+                <div class="dica">
+                    <h3>O que não pode faltar na mala</h3><br>
+                    <ul>
+                        <li>Carregador portátil (power bank)</li>
+                        <li>Adaptador universal de tomadas</li>
+                        <li>Medicamentos de uso pessoal</li>
+                        <li>Protetor solar e repelente</li>
+                        <li>Uma muda de roupa na bagagem de mão</li>
+                    </ul>
+                </div>
+
+                <div class="dica">
+                    <h3>Durante a viagem: viva com inteligência</h3><br>
+                    <ul>
+                        <li>Use mapas offline ou aplicativos como Google Maps.</li>
+                        <li>Aprenda frases básicas no idioma local.</li>
+                        <li>Evite ostentar objetos de valor em público.</li>
+                        <li>Prefira água engarrafada em destinos desconhecidos.</li>
+                        <li>Experimente comidas locais, mas com moderação no início.</li>
+                    </ul>
+                </div>
+
+                <div class="dica">
+                    <h3>Para economizar sem abrir mão da experiência</h3><br>
+                    <ul>
+                        <li>Compare preços em sites e apps como Skyscanner e Booking.</li>
+                        <li>Prefira transporte público sempre que possível.</li>
+                        <li>Busque restaurantes frequentados por locais.</li>
+                        <li>Considere free tours para conhecer pontos turísticos.</li>
+                    </ul>
+                    <div class="destacado">
+                        <p> Dica de ouro: <strong>Viajar fora da alta temporada</strong> pode te fazer economizar até 50% em
+                        voos e hospedagem! </p>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+    <footer>
+
+        <p>&copy; 2025 PittaViagens. Todos os direitos reservados.</p>
+        <a href="#" class="contato-footer">
+            <p>Clique aqui para entrar em contato.</p>
+        </a>
+
+    </footer>
+</body>
+
+</html>
