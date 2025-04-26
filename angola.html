@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PittaViagens - Angola</title>
+    <link rel="icon" href="img/LogoPittaViagens.png" type="image/png" />
+    <link href="style.css" rel="stylesheet" />
+    <script>
+        // Função para redirecionar para um link aleatório
+        function redirectRandom() {
+            // Lista de links
+            const links = [
+                "alemanha.html",
+                "italia.html",
+                "japao.html",
+                "brasil.html",
+                "angola.html",
+                "canada.html"
+            ];
+
+            // Selecionar um link aleatório
+            const randomLink = links[Math.floor(Math.random() * links.length)];
+
+            // Redirecionar o usuário para o link aleatório
+            window.location.href = randomLink;
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+
+        <a href="index.html"><img src="img/BannerPittaViagens.png" alt="Logo Pitta Viagens" width="" height="100" /></a>
+
+        <h1><strong>Explorando o Mundo</strong></h1>
+
+        <div class="navbar">
+
+            <nav>
+                <ul>
+                    <li><a href="melhoresdestinos.html">Melhores Destinos</a></li>
+                    <li><a href="dicasdeviagem.html">Dicas de Viagem</a></li>
+                    <li><a href="enviarcomentario.html">Envie seu comentário</a></li>
+                    <li><a href="#" onclick="redirectRandom()">Destino Aleatório</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+    <main>
+        <div id="container-geral-centro">
+            <div class="container">
+
+                <h2>Angola</h2>
+
+                <section class="video-pais">
+                    <h3>Veja mais da Angola</h3>
+                    <video autoplay muted controls>
+                        <source src="videos/video-angola.mp4" type="video/mp4">
+                    </video>
+                </section>
+
+                <section class="descricao-pais">
+                    <h3>Sobre</h3><br>
+                    <p>
+                        Angola é um país vibrante localizado na costa sudoeste da África, conhecido por sua rica
+                        cultura, paisagens deslumbrantes e uma história marcada pela resistência e superação. Desde
+                        praias paradisíacas como as de Benguela até as quedas d’água espetaculares de Kalandula, o país
+                        encanta por sua diversidade natural e autenticidade.
+                    </p>
+                    <p>
+                        A capital, Luanda, pulsa com energia e modernidade, misturando tradição com desenvolvimento
+                        urbano. A culinária angolana, fortemente influenciada pela cultura africana e portuguesa, é um
+                        verdadeiro convite ao paladar, com pratos como moamba de galinha e funge. O povo angolano é
+                        reconhecido pela sua hospitalidade calorosa e alegria contagiante, sempre pronto para receber os
+                        visitantes como verdadeiros kambas.
+                    </p>
+                    <p>
+                        Viajar por Angola é uma experiência única, que desperta os sentidos e o coração. É um destino
+                        que combina natureza, história, música e um profundo senso de identidade. Um lugar onde cada
+                        passo conta uma história e cada sorriso revela a alma de um povo forte e encantador.
+                    </p>
+                </section>
+
+                <section class="curiosidades-pais">
+                    <h3>Curiosidades</h3><br>
+                    <ul>
+                        <li>O <strong>Kwanza</strong> é a moeda oficial de Angola e também o nome de um dos maiores rios
+                            do país.</li>
+                        <li>Angola foi uma colônia portuguesa por mais de 400 anos, conquistando sua independência em
+                            1975.</li>
+                        <li>A dança e a música são partes essenciais da cultura angolana, com estilos como o kuduro e a
+                            kizomba ganhando destaque internacional.</li>
+                        <li>Angola abriga as impressionantes <strong>Quedas de Kalandula</strong>, uma das maiores
+                            cataratas da África.</li>
+                        <li>A língua oficial é o português, mas o país possui várias línguas nacionais como o kimbundu,
+                            umbundu e chokwe.</li>
+                        <li>Mais da metade da população angolana tem menos de 25 anos, fazendo do país uma das nações
+                            mais jovens do mundo.</li>
+                    </ul>
+                </section>
+
+                <section class="galeria-pais">
+                    <h3>Fotos</h3>
+                    <div class="galeria-imagens">
+                        <img src="https://cdn.pixabay.com/photo/2014/10/30/19/21/angola-509598_640.jpg"
+                            alt="Paisagem do país">
+                        <img src="https://www.conexaolusofona.org/wp-content/uploads/2019/06/destaque-fenda-tundavala-huila.jpg"
+                            alt="Cultura local">
+                        <img src="https://imagedelivery.net/TzloxitwaKYvw0NcMzksfQ/angorussia.com/2022/04/r.jpg/w=9999"
+                            alt="Comida típica">
+                    </div>
+                </section>
+
+                <section class="audio-pais">
+                    <h3>Ouça o hino da Angola</h3>
+                    <audio controls>
+                        <source src="audio/hino-angola.mp3" type="audio/mpeg">
+                    </audio>
+                </section>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+
+        <p>&copy; 2025 PittaViagens. Todos os direitos reservados.</p>
+        <a href="#" class="contato-footer">
+            <p>Clique aqui para entrar em contato.</p>
+        </a>
+
+    </footer>
+</body>

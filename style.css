@@ -90,10 +90,17 @@ nav a:hover {
     margin: 0, auto;
 }
 
+.container p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
 .container h3 {
     font-size: 32px;
     text-align: center;
 }
+
 
 #container-todas-imagens {
     margin-bottom: 30px;
@@ -272,7 +279,6 @@ footer {
 
 .container h2 {
     text-align: center;
-    color: #2c3e50;
     margin-bottom: 30px;
     font-size: 2.5em;
 }
@@ -288,10 +294,6 @@ footer {
 
 .dica:hover {
     transform: scale(1.03);
-}
-
-.dica h3 {
-    color: #2c3e50;
 }
 
 ol, ul {
@@ -344,4 +346,46 @@ ol, ul {
 
 .botao-enviar:hover {
     background-color: #0d5f46;
+}
+
+/* CSS para a pagina de cada país */
+
+.video-pais, .descricao-pais, .curiosidades-pais, .galeria-pais {
+    margin-bottom: 40px;
+}
+
+.video-pais video, .audio-pais audio {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.curiosidades-pais ul {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.curiosidades-pais li {
+    margin-bottom: 10px;
+}
+
+.galeria-imagens {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.galeria-imagens img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.galeria-imagens img:hover {
+    transform: scale(1.03);
 }

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PittaViagens - Alemanha</title>
+    <link rel="icon" href="img/LogoPittaViagens.png" type="image/png" />
+    <link href="style.css" rel="stylesheet" />
+    <script>
+        // Função para redirecionar para um link aleatório
+        function redirectRandom() {
+            // Lista de links
+            const links = [
+                "alemanha.html",
+                "italia.html",
+                "japao.html",
+                "brasil.html",
+                "angola.html",
+                "canada.html"
+            ];
+
+            // Selecionar um link aleatório
+            const randomLink = links[Math.floor(Math.random() * links.length)];
+
+            // Redirecionar o usuário para o link aleatório
+            window.location.href = randomLink;
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+
+        <a href="index.html"><img src="img/BannerPittaViagens.png" alt="Logo Pitta Viagens" width="" height="100" /></a>
+
+        <h1><strong>Explorando o Mundo</strong></h1>
+
+        <div class="navbar">
+
+            <nav>
+                <ul>
+                    <li><a href="melhoresdestinos.html">Melhores Destinos</a></li>
+                    <li><a href="dicasdeviagem.html">Dicas de Viagem</a></li>
+                    <li><a href="enviarcomentario.html">Envie seu comentário</a></li>
+                    <li><a href="#" onclick="redirectRandom()">Destino Aleatório</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+    <main>
+        <div id="container-geral-centro">
+            <div class="container">
+
+                <h2>Alemanha</h2>
+
+                <section class="video-pais">
+                    <h3>Veja mais da Alemanha</h3>
+                    <video autoplay muted controls>
+                        <source src="videos/video-alemanha.mp4" type="video/mp4">
+                    </video>
+                </section>
+
+                <section class="descricao-pais">
+                    <h3>Sobre</h3><br>
+                    <p>
+                        A <strong>Alemanha</strong> é um dos destinos mais fascinantes da Europa, conhecida por sua
+                        impressionante mistura de tradição e modernidade. Com uma rica história que vai desde castelos
+                        medievais até cidades reconstruídas após a Segunda Guerra Mundial, o país oferece experiências
+                        únicas para todos os gostos. Seja explorando os encantadores vilarejos da Rota Romântica,
+                        curtindo o agito cultural de Berlim, ou se encantando com os mercados de Natal de Munique, a
+                        Alemanha encanta a cada passo.
+                    </p>
+                    <p>
+                        Além disso, o país é famoso por sua eficiência, infraestrutura de ponta e hospitalidade. A
+                        culinária alemã, com seus pretzels, salsichas e cervejas artesanais, também é uma atração à
+                        parte. Viajar pela Alemanha é como mergulhar em um livro de história, com capítulos
+                        emocionantes, paisagens de tirar o fôlego e um povo acolhedor.
+                    </p>
+                </section>
+
+                <section class="curiosidades-pais">
+                    <h3>Curiosidades</h3><br>
+                    <ul>
+                        <li>A Alemanha possui mais de <strong>1.500 tipos de salsichas</strong> diferentes — é
+                            praticamente um paraíso gastronômico!</li>
+                        <li>É o país com o <strong>maior número de castelos da Europa</strong>, com mais de 20.000
+                            espalhados por seu território.</li>
+                        <li>O famoso festival <strong>Oktoberfest</strong>, em Munique, é o maior evento de cerveja do
+                            mundo e atrai milhões de visitantes todo ano.</li>
+                        <li>A floresta Negra (Schwarzwald) serviu de inspiração para vários contos dos <strong>Irmãos
+                                Grimm</strong>.</li>
+                        <li>A Alemanha foi pioneira na criação da <strong>autobahn</strong>, uma rodovia sem limite de
+                            velocidade em muitos trechos.</li>
+                        <li>O país é uma das nações com <strong>maior número de museus</strong> por habitante — cultura
+                            por todos os lados!</li>
+                    </ul>
+                </section>
+
+                <section class="galeria-pais">
+                    <h3>Fotos</h3>
+                    <div class="galeria-imagens">
+                        <img src="https://www.deutschland.de/sites/default/files/styles/image_carousel_mobile/public/media/image/TdT_Naturwunder_K%C3%B6nigssee.jpg?itok=zmrVuwhU"
+                            alt="Paisagem do país">
+                        <img src="https://caianomundo-prod.imgix.net/2016/04/maisbonitosalemanha.jpg?fm=pjpg&ixlib=php-1.2.1"
+                            alt="Cultura local">
+                        <img src="https://quantocustaviajar.com/blog/wp-content/uploads/2017/05/rota-romantica-alemanha.jpg"
+                            alt="Comida típica">
+                    </div>
+                </section>
+
+                <section class="audio-pais">
+                    <h3>Ouça o hino da Alemanha</h3>
+                    <audio controls>
+                        <source src="audio/hino-alemanha.mp3" type="audio/mpeg">
+                    </audio>
+                </section>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+
+        <p>&copy; 2025 PittaViagens. Todos os direitos reservados.</p>
+        <a href="#" class="contato-footer">
+            <p>Clique aqui para entrar em contato.</p>
+        </a>
+
+    </footer>
+</body>
