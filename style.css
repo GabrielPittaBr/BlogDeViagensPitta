@@ -308,8 +308,6 @@ ol, ul {
 
 /* CSS da pagina Enviar Comentarios */
 
-/* Formulário de Comentário */
-
 .form-comentario {
     display: flex;
     flex-direction: column;

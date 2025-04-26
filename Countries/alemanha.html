@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PittaViagens - Alemanha</title>
+    <link rel="icon" href="img/LogoPittaViagens.png" type="image/png" />
+    <link href="BlogDeViagensPitta\style.css" rel="stylesheet" />
+    <style>
+        .navbar nav ul li:nth-child(4) a {
+            border-bottom: 2px solid #ffffff;
+            padding-bottom: 8px;
+        }
+    </style>
+    <script>
+        // Função para redirecionar para um link aleatório
+        function redirectRandom() {
+            // Lista de links
+            const links = [
+                "Countries/alemanha.html",
+                "Countries/italia.html",
+                "Countries/japao.html",
+                "Countries/brasil.html",
+                "Countries/angola.html",
+                "Countries/canada.html"
+            ];
+
+            // Selecionar um link aleatório
+            const randomLink = links[Math.floor(Math.random() * links.length)];
+
+            // Redirecionar o usuário para o link aleatório
+            window.location.href = randomLink;
+        }
+    </script>
+</head>
+<body>
+    <header>
+
+        <a href="index.html"><img src="img/BannerPittaViagens.png" alt="Logo Pitta Viagens" width="" height="100" /></a>
+
+        <h1><strong>Explorando o Mundo</strong></h1>
+
+        <div class="navbar">
+
+            <nav>
+                <ul>
+                    <li><a href="melhoresdestinos.html">Melhores Destinos</a></li>
+                    <li><a href="dicasdeviagem.html">Dicas de Viagem</a></li>
+                    <li><a href="enviarcomentario.html">Envie seu comentário</a></li>
+                    <li><a href="#" onclick="redirectRandom()">Destino Aleatório</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+    <main>
+        <div id="container-geral-centro">
+
+            <div class="container">
+                <section class="destinos">
+                    <a href="Countries/japao.html">
+                        <div class="destino">
+                            <img src="https://s1.1zoom.me/b5536/273/Japan_Kyoto_Parks_Pagodas_Autumn_Pond_Branches_531659_1920x1080.jpg"
+                                alt="Paisagem do Japão">
+                            <div class="info">
+                                <h3>Japão</h3>
+                                <p>Tradições milenares e tecnologia futurista em perfeita harmonia. Um país fascinante
+                                    em todos os sentidos.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="Countries/alemanha.html">
+                        <div class="destino">
+                            <img src="https://s1.1zoom.me/b5254/652/Berlin_Germany_Houses_Rivers_Roads_Night_524204_1920x1080.jpg"
+                                alt="Paisagem da Alemanha">
+                            <div class="info">
+                                <h3>Alemanha</h3>
+                                <p>Castelos, florestas, história e modernidade. Uma viagem pela alma da Europa.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="Countries/italia.html">
+                        <div class="destino">
+                            <img src="https://live.staticflickr.com/787/27469906868_5b060af511_h.jpg"
+                                alt="Paisagem da Itália">
+                            <div class="info">
+                                <h3>Itália</h3>
+                                <p>Gastronomia, arte e cidades românticas. Um país para viver e saborear.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="Countries/brasil.html">
+                        <div class="destino">
+                            <img src="https://wallpapercat.com/w/full/b/c/c/616443-1920x1080-desktop-full-hd-brazil-background-photo.jpg"
+                                alt="Paisagem do Brasil">
+                            <div class="info">
+                                <h3>Brasil</h3>
+                                <p>Belezas naturais, alegria contagiante e diversidade cultural. Um destino cheio de
+                                    alma.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="Countries/canada.html">
+                        <div class="destino">
+                            <img src="https://wallpapers.com/images/hd/canada-background-qjrjinhra5gp3edr.jpg"
+                                alt="Paisagem do Canadá">
+                            <div class="info">
+                                <h3>Canadá</h3>
+                                <p>Montanhas majestosas, lagos cristalinos e cidades acolhedoras. Um paraíso para quem
+                                    ama a
+                                    natureza.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="Countries/angola.html">
+                        <div class="destino">
+                            <img src="https://pbs.twimg.com/media/E_uKjDQWYAErVwT.jpg" alt="Paisagem de Angola">
+                            <div class="info">
+                                <h3>Angola</h3>
+                                <p>Rica em cultura, natureza vibrante e hospitalidade única. Um destino africano
+                                    inesquecível.</p>
+                            </div>
+                        </div>
+                    </a>
+                </section>
+
+            </div>
+
+        </div>
+
+    </main>
+    <footer>
+
+        <p>&copy; 2025 PittaViagens. Todos os direitos reservados.</p>
+        <a href="#" class="contato-footer">
+            <p>Clique aqui para entrar em contato.</p>
+        </a>
+
+    </footer>
+</body>
